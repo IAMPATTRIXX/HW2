@@ -1,0 +1,67 @@
+.Headergame{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 100, 139);
+    font-family: 'Bangers', cursive;
+  }
+  .picgame{
+      text-align: center;
+      
+  }
+  .Discription{
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Bangers', cursive;
+  }
+
+.form{
+    text-align: center;
+}
+
+
+  .manual{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+    
+  }
+  
+  .guessField{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Righteous', cursive;
+  }
+
+  .guessSubmit{
+    font-size: 1.5rem;
+    color: rgb(59, 59, 59);
+    font-family: 'Righteous', cursive;
+  }
+
+  .result{
+      text-align: center;
+    font-size: 2rem;
+   color: black;
+   font-family: 'Righteous', cursive;
+    
+
+  }
+
+  .history{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Righteous', cursive;
+  }
+  .turn{
+      text-align: center;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Righteous', cursive;
+   
+  }
+  button{
+    font-size: 2rem;
+    color: rgb(15, 40, 54);
+    font-family: 'Righteous', cursive;
+  }

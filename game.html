@@ -15,6 +15,7 @@
     integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="anonymous" />
     <!-- icon -->
     <link rel="stylesheet" href="./css/AdminLTE.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/skins/_all-skins.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -98,37 +99,26 @@
           <!-- Content Header (Page header) -->
           <section class="content-header">
             <h1><b>
-              Contact
+              Game
             </h1>
             
           </section>
+          <section class="content-header">
+            <div class="Headergame">What is Number !!</div>
+            <div style="text-align: center;"><img class="picgame" src="https://i.pinimg.com/474x/ce/23/41/ce2341d214a58a3eac25ac0a7029bf7e.jpg" alt="" width="150" height="150" ></div>
+            <div class="Discription">random number between 0-100 in box.You can guess just 10 times.Good luck :) </div>
+            <div class="Discription">If you want to reset a game press"spacebar"</div>
+          </section>
+          <div class="form"> 
+              <input type = "text" id = "guessField" class = "guessField" placeholder="Enter a Number Here !"> 
+              <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
+          </div>
+      <div class="result"></div>
+      <div class="history"></div> <div class="turn"></div>
       
           <!-- Main content -->
         <section class="content">
-          
-        <table width=80% align="Left"  style="padding: 15px;  border:0 px">
-                <tr>
-                    <td> Name : <input type="text" name = "Name"></td>
-                </tr>
-                <tr>
-                    <td>Gender : <input type="radio" name="Gender" id="Male">Male <input type="radio" name="Gender" id="Female">Female <input type="radio" name="Gender" id="Other">Other</td>
-                </tr>
-                <tr>
-                    <td>Phone : <input type="tel" name = "Phone"></td>
-                </tr>
-                <tr>
-                    <td>E-mail : <input type="email" name = "email"></td>
-                </tr>
-                <tr>
-                    <td>Image : <input type="file" name="Image" id=""></td>
-                </tr>
-                <tr>
-                    <td>Message : <br><textarea name="Message" id="" cols="30" rows="10">Write here...</textarea></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Submit"></td>
-                </tr>
-        </table>
+        
         </section>
           <!-- /.content -->
         </div>
@@ -163,6 +153,7 @@
     <!-- fastclick -->
     <script src="./js/adminlte.min.js"></script>
     <script src="./js/demo.js"></script>
+    <script src="./game.js"></script>
 
 </body>
 </html>
