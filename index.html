@@ -15,6 +15,7 @@
     integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="anonymous" />
     <!-- icon -->
     <link rel="stylesheet" href="./css/AdminLTE.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/skins/_all-skins.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -23,7 +24,7 @@
 
         <header class="main-header">
           <!-- Logo -->
-          <a href="index.html" class="logo">
+          <a href="home.html" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>CPE</b></span>
             <!-- logo for regular state and mobile devices -->
@@ -81,8 +82,8 @@
                 </a>
               </li>
               <li>
-                <a href="game.html">
-                  <i class="fa fa-th"></i> <span>Game</span>
+                <a href="index.html">
+                  <i class="fa fa-gamepad"></i> <span>Game</span>
                 </a>
               </li>
               
@@ -98,45 +99,26 @@
           <!-- Content Header (Page header) -->
           <section class="content-header">
             <h1><b>
-              Home
+              Game
             </h1>
             
           </section>
+          <section class="content-header">
+            <div class="Headergame">What the No. !!</div>
+            <div style="text-align: center;"><img class="picgame" src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="150" height="150" ></div>
+            <div class="Discription">random number between 0-100 in box.You can guess just 10 times.Good luck :) </div>
+            <div class="Discription">If you want to reset a game press"spacebar"</div>
+          </section>
+          <div class="form"> 
+              <input type = "text" id = "guessField" class = "guessField" placeholder="Enter a Number Here !"> 
+              <input type = "submit" value = "Guess!!!" class = "guessSubmit" id = "submitguess"> 
+          </div>
+      <div class="result"></div>
+      <div class="history"></div> <div class="turn"></div>
       
           <!-- Main content -->
         <section class="content">
-        <table width='80%'  align="Left" style="padding: 15px;  border:0px solid;">
-            <tr>
-                <td width='20%'><h2>Profile</h2></td>
-                <td colspan="2"><p>Computer Engineering student in Chaingmai University (CMU)</p></td>
-            </tr>
-            <tr>
-                <td width ='20%'><h2>Skills</h2></td>
-                <td colspan="2"><p>Basic Circuit&Logic Circuit</p>
-                </td>
-            </tr>
-            <tr>
-                <td width ='20%'><h2>Technical</h2></td>
-                <td><p>Javascript & C,C++</p></td>
-                
-            </tr>
-            <tr>
-                <td width ='20%'><h2>Language Skill</h2></td>
-                <td><table width='400' height='50'> 
-                    <tr><th>Language</th><th width =>Writing Skill</th><th>Reading Skill</th><th>Speaking Skill</th></tr>
-                    <tr><td>Thai</td><td> Very Good</td><td>Very Good</td><td>Very Good</td></tr>
-                    <tr><td>English</td><td>Medium</td><td>Good</td><td>Medium</td></tr>
-                    <tr><td>Japanese</td><td>Low</td><td>Low</td><td>Low</td></tr>
-                </table></td>
-            </tr>
-            <tr>
-                <td width = '20%'><h2>Education</h2></td>
-                <td colspan="2"><h3>Phitsanulok Pittayakom</h3><hr style="border:1px solid;">
-                <p>middle & high school <br> GPA : 3.38</p>
-                
-                </td>
-            </tr>
-        </table>
+        
         </section>
           <!-- /.content -->
         </div>
@@ -171,6 +153,7 @@
     <!-- fastclick -->
     <script src="./js/adminlte.min.js"></script>
     <script src="./js/demo.js"></script>
+    <script src="./game.js"></script>
 
 </body>
 </html>
