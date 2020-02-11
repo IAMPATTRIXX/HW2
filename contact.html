@@ -13,6 +13,9 @@
     <!-- font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" 
     integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="anonymous" />
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
     <!-- icon -->
     <link rel="stylesheet" href="./css/AdminLTE.min.css">
     <link rel="stylesheet" href="./css/skins/_all-skins.min.css">
@@ -100,35 +103,65 @@
             <h1><b>
               Contact
             </h1>
-            
           </section>
       
           <!-- Main content -->
         <section class="content">
-          
-        <table width=80% align="Left"  style="padding: 15px;  border:0 px">
-                <tr>
-                    <td> Name : <input type="text" name = "Name"></td>
-                </tr>
-                <tr>
-                    <td>Gender : <input type="radio" name="Gender" id="Male">Male <input type="radio" name="Gender" id="Female">Female <input type="radio" name="Gender" id="Other">Other</td>
-                </tr>
-                <tr>
-                    <td>Phone : <input type="tel" name = "Phone"></td>
-                </tr>
-                <tr>
-                    <td>E-mail : <input type="email" name = "email"></td>
-                </tr>
-                <tr>
-                    <td>Image : <input type="file" name="Image" id=""></td>
-                </tr>
-                <tr>
-                    <td>Message : <br><textarea name="Message" id="" cols="30" rows="10">Write here...</textarea></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Submit"></td>
-                </tr>
-        </table>
+          <div class="col-md-6">
+            <div class="box box-primary">
+              <form role="form">
+                <div class="box-body">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="Name">Name</label>
+                    <div class="box-body">
+                      <div class="row">
+                        <div class="col-xs-5">
+                          <input type="text" id="Fname" class="form-control" placeholder="Enter:Name">
+                        </div>
+                        <div class="col-xs-5">
+                          <input type="text" id="Lname" class="form-control" placeholder="Enter:Last Name">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Sex -->
+                  <div class="form-group">
+                    <label for="Sex">Sex</label>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="1" value="option1" checked>
+                        Male
+                      </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>
+                        <input type="radio" name="optionsRadios" id="2" value="option2" >
+                        Female
+                      </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label> 
+                        <input type="radio" name="optionsRadios" id="3" value="option3">
+                        Other
+                      </label>
+                    </div>
+                    
+                  </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                  <!-- TextArea -->
+                  <div class="form-group">
+                    <label>Textarea</label>
+                    <textarea class="form-control" rows="4" id="text" placeholder="Write here"></textarea>
+                  </div>
+                  <!-- Submit -->
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </section>
           <!-- /.content -->
         </div>
@@ -144,6 +177,7 @@
       
         <div class="control-sidebar-bg"></div>
     </div>
+    <!-- Old -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"
   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
   crossorigin="anonymous">
@@ -163,6 +197,13 @@
     <!-- fastclick -->
     <script src="./js/adminlte.min.js"></script>
     <script src="./js/demo.js"></script>
-
+    <script src="./firebase.js"></script>
+    <!-- New 11/2/2020 -->
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
 </body>
 </html>
