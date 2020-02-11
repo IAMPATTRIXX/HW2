@@ -19,11 +19,11 @@ console.log('Hi');
 
 $('#save').click(()=> {
     e = false
-    let first = document.getElementById("Fname").value;
-    let last = document.getElementById("Lname").value;
+    let first = document.getElementById("first").value;
+    let last = document.getElementById("last").value;
     let sex = $('input[name=gender]:checked', '#contact').val();
     let email = document.getElementById("email").value;
-    let detail = document.getElementById("text").value;
+    let detail = document.getElementById("detail").value;
 
     //checked validation
 
@@ -31,18 +31,18 @@ $('#save').click(()=> {
     if(!(first.match('^[a-zA-Z]{1,16}$')) || first == "") {
         console.log('F');
         e = true;
-        document.querySelector('#f').textContent = "Please enter a valid First name."
+        document.querySelector('#fe').textContent = "Please enter a valid First name."
     }else{
-        document.querySelector('#f').textContent = ""
+        document.querySelector('#fe').textContent = ""
 
     }
 
     if(!(last.match('^[a-zA-Z]{1,16}$')) || last == "") {
         console.log('L');
         e = true;
-        document.querySelector('#l').textContent = "Please enter a valid Last name."
+        document.querySelector('#le').textContent = "Please enter a valid Last name."
     }else{
-        document.querySelector('#l').textContent = ""
+        document.querySelector('#le').textContent = ""
 
     }
 
